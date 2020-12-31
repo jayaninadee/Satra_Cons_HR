@@ -8,8 +8,6 @@
       <root url="jar://$PROJECT_DIR$/src/lk/satra/hr/lib/jasperreports-6.4.3.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lk/satra/hr/lib/jasperreports-javaflow-6.4.3.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lk/satra/hr/lib/jcommon-1.0.8.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/lk/satra/hr/lib/jfoenix-9.0.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/lk/satra/hr/lib/jfoenix-9.0.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lk/satra/hr/lib/jfoenix.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lk/satra/hr/lib/jfreechart-1.0.13.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lk/satra/hr/lib/org-apache-commons-logging.jar!/" />

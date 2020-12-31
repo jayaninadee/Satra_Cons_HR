@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.effect.Light.Distant?>
-<?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -25,7 +23,7 @@
                   <Image url="@../asset/img/Logo.png" />
                </image>
             </ImageView>
-            <Label layoutX="320.0" layoutY="49.0" prefHeight="80.0" prefWidth="644.0" text="Satra Engineering Consortium (Pvt) Ltd.">
+            <Label layoutX="320.0" layoutY="49.0" prefHeight="80.0" prefWidth="644.0" text="Satra Engineering Consortium (PVT) LTD.">
                <font>
                   <Font name="Bodoni MT Bold" size="36.0" />
                </font>
@@ -34,25 +32,17 @@
       </AnchorPane>
       <AnchorPane layoutX="89.0" layoutY="239.0" prefHeight="343.0" prefWidth="405.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <TextField layoutX="117.0" layoutY="114.0" prefHeight="39.0" prefWidth="249.0" promptText="hr@satra.lk" />
-            <TextField layoutX="117.0" layoutY="178.0" prefHeight="39.0" prefWidth="256.0" promptText="Password" />
-            <Label alignment="CENTER" layoutX="116.0" layoutY="39.0" prefHeight="31.0" prefWidth="158.0" style="-fx-text-fill: #00b6ff; -fx-font-size: 14; -fx-font-family: arial; -fx-border-radius: 20; -fx-border-color: #00b6ff;" text=" LOGIN " textAlignment="CENTER">
-               <effect>
-                  <Lighting bumpInput="$null">
-                     <light>
-                        <Light.Distant color="#41acd3" />
-                     </light>
-                  </Lighting>
-               </effect>
-            </Label>
-            <Label layoutX="31.0" layoutY="120.0" prefHeight="39.0" prefWidth="67.0" text="User Name" />
-            <Label layoutX="31.0" layoutY="184.0" prefHeight="39.0" prefWidth="67.0" text="Password" />
-            <Button layoutX="123.0" layoutY="253.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="149.0" style="-fx-background-radius: 5px;" text="Login" />
+            <Label alignment="CENTER" layoutX="116.0" layoutY="39.0" prefHeight="31.0" prefWidth="158.0" style="-fx-text-fill: #00b6ff; -fx-font-size: 14; -fx-font-family: arial; -fx-border-radius: 20; -fx-border-color: #00b6ff;" text=" LOGIN " textAlignment="CENTER" />
+            <Label layoutX="59.0" layoutY="120.0" prefHeight="39.0" prefWidth="76.0" style="-fx-font-size: 13;" text="User Name" />
+            <Label layoutX="59.0" layoutY="184.0" prefHeight="39.0" prefWidth="67.0" style="-fx-font-size: 13;" text="Password" />
             <ImageView fitHeight="59.0" fitWidth="59.0" layoutX="98.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../asset/img/login.png" />
                </image>
             </ImageView>
+            <JFXTextField fx:id="user_email" focusColor="#83db20" layoutX="155.0" layoutY="127.0" onAction="#enterKeyPressed" promptText="hr@satra.lk" unFocusColor="#00b6ff" />
+            <JFXTextField fx:id="user_password" focusColor="#83db20" layoutX="155.0" layoutY="187.0" promptText="Password" unFocusColor="#00b6ff" />
+            <JFXButton buttonType="RAISED" layoutX="116.0" layoutY="259.0" prefHeight="39.0" prefWidth="137.0" ripplerFill="#85d925" style="-fx-background-color: #00b6ff; -fx-background-radius: 25;" text="Login" />
          </children>
          <effect>
             <DropShadow />
